@@ -11,7 +11,7 @@ const chainMaker = {
   },
 
   removeLink(position) {
-    if (position == '' || typeof (position) !== 'number' || this.chain[position] === undefined) {
+    if (position === 0 || typeof (position) !== 'number' || this.chain[position] === undefined) {
       this.chain = [];
       throw new Error();
     }
